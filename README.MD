@@ -5,18 +5,18 @@ This project contains the tool for dumping the video stream data of cloud game c
 # How to use
 This tool is built on top of the hooking framework [Frida](https://frida.re/), so it depends the frida environment. The environment can be setup as follows:
 
-1. Install (Python 3.7)[https://www.python.org/downloads/] and PIP
+1. Install [Python 3.7](https://www.python.org/downloads/) and PIP
 
 2. Install Frida Python Package
     > `pip install frida`
 
-3. Download the corresponding (frida-server-{ver}-{platform}-{arc})[https://github.com/frida/frida/releases] from Github release. For example, if you need to install the frida server to an Android device which has ARM64 cpu, you need to choose **frida-server-12.7.22-android-arm64.xz**
+3. Download the corresponding [frida-server-{ver}-{platform}-{arc}](https://github.com/frida/frida/releases) from Github release. For example, if you need to install the frida server to an Android device which has ARM64 cpu, you need to choose **frida-server-12.7.22-android-arm64.xz**
 
 4. Push the **frida-server** binary file to your Android device: 
     > `adb push frida-server /data/`
 
 5. Run the **frida-server** in the Android with adb shell
-    1. `> adb.exe shell`                #Enter the android shell      
+    1. `> adb.exe shell`                # Enter the android shell      
     2. `$ su`                           # Switch to root user       
     3. `# chmod +x /data/frida-server`  # Add execute privilege   
     4. `# ./data/frida-server`          # Launch the frida-server   

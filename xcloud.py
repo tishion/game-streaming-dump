@@ -12,7 +12,7 @@ import frida
 # The Javascript file name
 SOURCE_FILE_NAME = "xcloud-intercept.js"
 TARGET_APP = "com.microsoft.xcloud"
-FILE = open('xcloud-' + time.strftime('%Y%m%d-%H%M%S.h264'), 'wb')
+FILE = open( 'data/xcloud-' + time.strftime('%Y%m%d-%H%M%S.h264'), 'wb')
 STOPPED = False
 
 # Print message from target process
